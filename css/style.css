@@ -55,7 +55,7 @@ body.light{
   }
 #pagination {
     display: inline-block;
-    
+    margin-right: 12px;
   }
   
   #pagination a {
@@ -143,6 +143,18 @@ body.light{
   animation-delay: 0.4s;
   opacity: 0.4;
 }
+.random-bar{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 25%;
+}
+.random-bar li{
+  display: inline-block;
+
+}
+
 
 
 
