@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script>
+            
+        function testForm (){
+            var usr = document.getElementById("exForm").elements[0].value;
+            var pwd = document.getElementById("exForm").elements[1].value;
+            document.getElementById("fresult").innerHTML = "Example form submitted with data: Username = "+usr+" and Password = "+pwd;
+            return false;
+    }
+    </script>
+    </head>
+    <body>
+        <link rel="stylesheet" href="css/style.css">
+        <button class="red-bg btn">RED</button>
+        <button class="orange-bg btn">ORANGE</button>
+        <button class="yellow-bg btn">YELLOW</button>
+        <button class="green-bg btn">GREEN</button>
+        <button class="blue-bg btn">BLUE</button>
+        <button class="indigo-bg btn">INDIGO</button>
+        <button class="violet-bg btn">VIOLET</button>
+        <br><br><br>
+        <button class="round red-bg btn">RED</button>
+        <button class="round orange-bg btn">ORANGE</button>
+        <button class="round yellow-bg btn">YELLOW</button>
+        <button class="round green-bg btn">GREEN</button>
+        <button class="round blue-bg btn">BLUE</button>
+        <button class="round indigo-bg btn">INDIGO</button>
+        <button class="round violet-bg btn">VIOLET</button>
+        <button class="disabled btn">DISABLED</button>
+        <form onsubmit="testForm();" id="exForm" action="javascript:void(0);">
+            <ul style="list-style: none;">
+            <li><h3>Login</h3></li>
+            <li><input class ="input"type="text" name="usr" placeholder="Username..."></li>
+            <li><input class ="input" type="password" name="pwd" placeholder="Example Password..."></li>
+            <li><input type="submit" value="Login"class="btn"></li>
+            <li><p id="fresult"></p></li>
+            </ul>
+        </form>
+        <input type="number" class ="round input"name="mail" >
+        <div class="codebox">
+            <code>   
+                var message = "This is my styled code box!";
+                alert(message);
+            </code>
+        </div>
+        <div class="red">RED</div>
+        <div class="orange">ORANGE</div>
+        <div class="yellow">YELLOW</div>
+        <div class="green">GREEN</div>
+        <div class="blue">BLUE</div>
+        <div class="indigo">INDIGO</div>
+        <div class="violet">VIOLET</div>
+        <div class="spin-loader"></div>
+        <br><br><br><br>
+        <div class="ball-loader">
+            <div></div>
+            <div class="bl2"></div>
+            <div class="bl3"></div>
+        </div>
+        <div class="toast"><strong class="title">Test</strong><p class="text">This is a test.</p></div>
+    </body>
+</html>
