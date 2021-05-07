@@ -1,72 +1,33 @@
-<!DOCTYPE html>
-<html>
-	<meta charset="UTF-8">
-	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="media/logo.png" />
-		<title>CodeBasix</title>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/index.js" defer> </script>
-		<script src="js/pages.js" defer></script>
-	</head>
-    <body>
-        <center><u><h1>CodeBasix</h1></u>
-		<p>The easy to understand code help website for students.</p>
-		
-		<table border="1" class="t01">
-		<caption>Topics</caption>
-		<tr>
-			<th>Language</th>
-			<th>Level</th>
-			<th>Page No</th>
-			<th>Description</th>
-		</tr>
-		<tr>
-			<td>HTML</td>
-			<td class="beginner">Beginner</td>
-			<td><a onclick="pagination(1);" style="cursor: pointer;">1</a></td>
-			<td>Learn how to create basic websites using HTML.</td>
-		</tr>
-		<tr>
-			<td>CSS</td>
-			<td class="intermediate">Intermediate</td>
-			<td><a onclick="pagination(2);" style="cursor: pointer;">2</a></td>
-			<td>Learn how to make your website look pretty using CSS.</td>
-		</tr>
-		<tr>
-			<td>JavaScript</td>
-			<td class="intermediate-advanced">Intermediate to Advanced</td>
-			<td><a onclick="pagination(3);" style="cursor: pointer;">3</a></td>
-			<td>Give your website interactivity using JavaScript.</td>
-		</tr>
-		</table>
-	</center>
-		
-		<br>
-		<ul class="random-bar">
-		<li>
-		<div id="pagination">
-			<a onclick="prevPage();">&laquo;</a>
-			<a class="active-page" onclick="pagination(1);">1</a>
-			<a onclick="pagination(2);">2</a>
-			<a onclick="pagination(3);">3</a>
-			<a onclick="pagination(4);">4</a>
-			<a onclick="pagination(5);">5</a>
-			<a onclick="pagination(6);">6</a>
-			<a onclick="pagination(7);">7</a>
-			<a onclick="pagination(8);">8</a>
-			<a onclick="pagination(9);">9</a>
-			<a onclick="pagination(10);">10</a>
-			<a onclick="nextPage();">&raquo;</a>
-		  </div>
-		</li>
-		<li><button class="btn round" onclick="toggleTheme();">Change Theme</button></li>
-	</ul>
-		<div id="pagination-page">
-
-		</div>
-	
-    </body>
+<html lang='en'>
+<head>
+<meta charset = 'utf-8'>
+<link rel='stylesheet' href='style.css'/>
+<script src="index.js" defer> </script>
+<div class='nav'>
+	<a href='index.html'>Home</a>
+	<a href='page2.html'>Needy Speedy</a>
+</div>
+</head>
+<body>
+<br>
+<center>
+<h1>Buy Shopping Trollies!</h1>
+<br>
+<table>
+<tr>
+    <th>Type</th>
+    <th>Price</th> 
+    <th>Link</th>
+   </tr>
+  <tr>
+    <td>Needy Speedy</td>
+     <td>£49.99</td> 
+    <td><a href='page2.html'>Here</a></td>
+   </tr>
+</table>
+<br>
+<p>Limited deal ends in:</p>
+<strong id='count'>30</strong>
+</center>
+</body>
 </html>
-
-
-
